@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<title>Consultoria Financeira</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+
+<style>
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: #fdfbf7;
+    color: #1f2d3d;
+}
+
+nav {
+    background: white;
+    padding: 18px;
+    text-align: center;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+nav a {
+    margin: 0 25px;
+    text-decoration: none;
+    color: #1f2d3d;
+    font-weight: 500;
+}
+
+header {
+    background: #1f3b57;
+    color: white;
+    text-align: center;
+    padding: 70px 20px;
+}
+
+h1, h2 {
+    font-family: 'Playfair Display', serif;
+}
+
+section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.sobre {
+    max-width: 900px;
+    margin: auto;
+    line-height: 1.8;
+}
+
+.beneficios {
+    background: #d8cfc4;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.card {
+    background: white;
+    padding: 30px;
+    width: 280px;
+    border-radius: 16px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+    position: relative;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+}
+
+/* NUVEM / POPUP */
+.nuvem {
+    position: absolute;
+    bottom: 120%;
+    left: 50%;
+    transform: translateX(-50%) translateY(10px);
+    width: 260px;
+    background: white;
+    border-radius: 20px;
+    padding: 15px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.18);
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.35s ease;
+}
+
+.nuvem img {
+    width: 100%;
+    border-radius: 14px;
+    margin-bottom: 10px;
+}
+
+.nuvem p {
+    font-size: 13px;
+    line-height: 1.5;
+    margin: 0;
+}
+
+.card:hover .nuvem {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+}
+
+.contato {
+    background: #1f3b57;
+    color: white;
+}
+
+.botao {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 14px 28px;
+    background: white;
+    color: #1f3b57;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.botao:hover {
+    transform: scale(1.05);
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>Realize Seus Objetivos com Segurança</h1>
+    <p>Consultoria especializada em Consórcios, Seguros e Planejamento Financeiro</p>
+</header>
+
+<section>
+    <h2>Sobre a Consultora</h2>
+    <div class="sobre">
+        <p>
+            Me chamo <strong>Vania</strong> e ingressei no mercado de consórcios após me apaixonar por esse caminho
+            que muitos acreditavam ser difícil de trilhar.
+        </p>
+        <p>
+            Hoje, minha missão é ajudar pessoas a realizarem seus sonhos com segurança, clareza e planejamento.
+            Estou aqui para caminhar ao seu lado e tornar esse processo mais simples, leve e possível.
+        </p>
+    </div>
+</section>
+
+<section class="beneficios">
+    <h2>Por que escolher meu atendimento?</h2>
+
+    <div class="cards">
+
+        <div class="card">
+            <div class="nuvem">
+                <img src="imagens/foto1.jpg">
+                <p>
+                    Atendimentos online via chamada de vídeo, direto com um atendimento profissional.
+                    Horários agendados conforme o seu conforto.
+                </p>
+            </div>
+            <h3>Atendimento Exclusivo</h3>
+            <p>Consultoria individual e soluções alinhadas ao seu perfil.</p>
+        </div>
+
+        <div class="card">
+            <div class="nuvem">
+                <img src="imagens/foto2.jpg">
+                <p>
+                    Lhe ajudamos a entender o melhor caminho para seu consórcio,
+                    com base na sua necessidade e objetivos.
+                </p>
+            </div>
+            <h3>Planejamento Inteligente</h3>
+            <p>Estratégias pensadas para gerar segurança e previsibilidade.</p>
+        </div>
+
+        <div class="card">
+            <div class="nuvem">
+                <img src="imagens/foto3.jpg">
+                <p>
+                    Fazemos o possível para que você saia satisfeito e compreendendo todo o processo,
+                    com clareza e sem dúvidas.
+                </p>
+            </div>
+            <h3>Confiança & Clareza</h3>
+            <p>Orientação transparente e suporte contínuo.</p>
+        </div>
+
+    </div>
+</section>
+
+<section class="contato">
+    <h2>Entre em Contato</h2>
+    <p>Fale comigo diretamente pelo WhatsApp.</p>
+    <a class="botao" href="https://wa.me/SEUNUMEROAQUI" target="_blank">
+        Falar no WhatsApp
+    </a>
+</section>
+
+</body>
+</html>
